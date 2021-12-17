@@ -4,7 +4,8 @@
         public $mysqli;
         public $resultado;
         function __construct(){
-            $this->mysqli = new mysqli('localhost', 'root', '', 'minijuego');
+            require_once '.gitignore/configdb.php';
+            $this->mysqli = new mysqli(SERVIDOR,USUARIO, CONTRA,BBDD);
         }
         //hace la consulta
         function consultar($consulta){
