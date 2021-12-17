@@ -5,7 +5,7 @@
         public $resultado;
         function __construct(){
             require_once '.gitignore/configdb.php';
-            $this->mysqli = new mysqli(SERVIDOR,USUARIO, CONTRA,BBDD);
+            $this->mysqli = new mysqli(SERVIDOR,USUARIO,CONTRA,BBDD);
         }
         //hace la consulta
         function consultar($consulta){
