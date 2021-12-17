@@ -4,7 +4,7 @@
         public $mysqli;
         public $resultado;
         function __construct(){
-            require_once '.gitignore/configdb.php';
+            require_once 'configdb.php';
             $this->mysqli = new mysqli(SERVIDOR,USUARIO,CONTRA,BBDD);
         }
         //hace la consulta
