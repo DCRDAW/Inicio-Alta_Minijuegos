@@ -1,11 +1,11 @@
 <?php
-    require_once '../conexion.php';
+    require_once '../procesosDB.php';
     /*clase admin, que es la que llama a la conexion */
     class Admin 
     {
         public $conexion;
         function __construct(){
-            $this->conexion=new Conexion();
+            $this->conexion=new Procesos();
         }
 
         function inicioSesion($correo,$pw){

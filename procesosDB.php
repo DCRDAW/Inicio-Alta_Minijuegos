@@ -1,5 +1,5 @@
 <?php
-    class Conexion
+    class Procesos
     {
         public $mysqli;
         public $resultado;
@@ -10,7 +10,6 @@
         //hace la consulta
         function consultar($consulta){
             $this->resultado= $this->mysqli->query($consulta);
-            return $this->resultado;
         }
         //hace el fetch
         function extraerFilas(){
